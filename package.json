@@ -1,0 +1,31 @@
+{
+  "name": "http-utils",
+  "description": "Low-level HTTP parsing/formatting utilities",
+  "version": "0.0.0",
+  "contributors": [
+    "Douglas Christopher Wilson <doug@somethingdoug.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "http",
+    "utils"
+  ],
+  "repository": "jshttp/http-utils",
+  "devDependencies": {
+    "istanbul": "0.3.0",
+    "mocha": "~1.21.4"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "files": [
+    "HISTORY.md",
+    "LICENSE",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  }
+}
