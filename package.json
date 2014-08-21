@@ -13,7 +13,8 @@
   "repository": "jshttp/http-utils",
   "devDependencies": {
     "istanbul": "0.3.0",
-    "mocha": "~1.21.4"
+    "mocha": "~1.21.4",
+    "pegjs": "~0.8.0"
   },
   "engines": {
     "node": ">= 0.8.0"

@@ -5,7 +5,28 @@
  */
 
 /**
+ * Module dependencies.
+ */
+
+var headers = require('./headers');
+var parser = require('./parser');
+
+/**
  * Module exports.
  */
 
-module.exports = {};
+exports.headers = {};
+
+headers.forEach(function (header) {
+  var prop = header.replace(/-/g, '')
+    .replace(/^[A-Z]/, function (c) { return c.toLowerCase(); });
+  var rule = header.replace(/-/g, '_');
+
+  function parse(str) {
+    return parser.parse(str, {startRule: rule});
+  }
+
+  exports.headers[prop] = {
+    parse: parse
+  };
+});
