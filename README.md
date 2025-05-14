@@ -1,3 +1,10 @@
+> [!CAUTION]
+> **This repository is archived and no longer actively maintained.**
+>
+> We are no longer accepting issues, feature requests, or pull requests.
+> For additional support or questions, please visit the [Express.js Discussions page](https://github.com/expressjs/express/discussions).
+
+
 # http-utils
 
 [![NPM Version](http://img.shields.io/npm/v/http-utils.svg?style=flat)](https://www.npmjs.org/package/http-utils)
